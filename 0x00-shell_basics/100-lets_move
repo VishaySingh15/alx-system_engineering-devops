@@ -1,2 +1,2 @@
 #!/bin/bash
-mv -t /tmp/u [[:upper:]]* \
+ls [A-Z]* | mv {} /tmp/u
