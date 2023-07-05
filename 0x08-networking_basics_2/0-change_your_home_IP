@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script modifies etc host file to reslove localhost and facebook.com
+cp /etc/hosts ~/hosts.new
+sed -i "/localhost$/c\127.0.0.2\tlocalhost" ~/hosts.new
+sed -i "/facebook.com/c\8.8.8.8\tfacebook.com" ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
